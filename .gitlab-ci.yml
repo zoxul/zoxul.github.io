@@ -30,6 +30,7 @@ deploy_job:
     - pip install mkdocs-print-site-plugin
     - pip install mkdocs-glightbox
     - pip install mkdocs-pdf-with-js-plugin
+    - pip install mkdocs-table-reader-plugin
     
     - mkdocs build
     - mkdir .public
