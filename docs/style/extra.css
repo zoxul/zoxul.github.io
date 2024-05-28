@@ -1,0 +1,196 @@
+:root>* {
+    --main-color: #004572;
+    --second-color: #0076ad;
+    --md-typeset-a-color: #0076ad;
+    /* hover顏色 */
+    --md-accent-fg-color: rgb(147, 221, 255);
+    /* 黑暗模式的側面欄active */
+    --md-typeset-a-color: #0076ad;
+    --md-mermaid-node-fg-color: #0076ad !important;
+}
+
+@media screen and (max-width: 76.234375em) {
+    .md-nav--primary .md-nav__title[for=__drawer] {
+        background-color: var(--main-color);
+        color: var(--md-primary-bg-color);
+        font-weight: 700;
+    }
+
+    .md-nav__source {
+        background-color: var(--second-color);
+        color: var(--md-primary-bg-color);
+        display: block;
+        padding: 0 .2rem;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #237ecf !important;
+    font-family: 'Arial', sans-serif !important;
+    font-weight: bold !important;
+}
+
+/* 主nav */
+.md-header {
+    border-top: 5px solid var(--second-color);
+    background-color: var(--main-color);
+}
+
+/* 小nav */
+.md-tabs {
+    background-color: var(--md-default-bg-color);
+    color: var(--md-default-fg-color);
+}
+
+/* sidebar */
+.md-sidebar {
+    padding: 20px 0px;
+}
+
+/* sidebar標題 */
+.md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
+    /* background: none;
+    box-shadow: none; */
+    /* margin-top: 0; */
+    /* position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--md-default-bg-color);
+    border-bottom: 2px solid var(--md-mermaid-node-fg-color); */
+    /* padding-bottom: 10px; */
+    display: none;
+}
+
+.md-tabs__link {
+    flex-wrap: wrap;
+}
+
+/* 小nav動畫 */
+.md-tabs__item a::after {
+    content: "";
+    display: flex;
+    background-color: var(--second-color);
+    width: 0%;
+    height: 2px;
+    margin-top: 3px;
+    transition: width 0.5s, .5s;
+}
+
+.md-tabs__item:hover .md-tabs__link::after {
+    width: 100%;
+}
+
+.md-tabs__item--active .md-tabs__link::after {
+    width: 100%;
+}
+
+.md-main__inner {
+    margin-top: 0rem;
+}
+
+/*  {-- 刪除 --}  */
+del {
+    color: red;
+}
+
+/*  {++ 新增 ++}  */
+ins {
+    color: green;
+}
+
+/*  {== 強調 ==}  */
+mark {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+/*  *雙框*  */
+em {
+    font-style: normal;
+    border-style: double;
+    /* background-color: gainsboro; */
+
+}
+
+/*  **粗體**  */
+strong {
+    color: var(--main-color);
+}
+
+/* list */
+::marker {
+    margin: 0;
+    padding: 20px 0;
+    color: var(--main-color);
+}
+
+/* 表格寬度最大 */
+.md-typeset__table {
+    min-width: 100%;
+}
+
+.md-typeset table:not([class]) {
+    display: table;
+}
+
+/* code block 顏色 */
+code {
+    font-family: "Source Code Pro", monospace !important;
+    font-optical-sizing: auto !important;
+    font-weight: 600 !important;
+    font-style: normal !important;
+}
+
+/* 表格第一行顏色 */
+thead {
+    background-color: var(--main-color);
+    color: #fff !important;
+}
+
+/* 頁面拉到最大 */
+.md-grid {
+    max-width: none;
+}
+
+.md-content {
+    min-height: 100vh;
+    box-shadow: inset 0px -5px 14px 1px var(--md-typeset-kbd-border-color);
+}
+
+.md-nav__link--passed {
+    color: var(--md-default-fg-color--light);
+}
+
+.md-nav__link {
+    padding: 5px;
+    margin: 0px;
+}
+
+.md-nav__link--active {
+    font-weight: bold;
+}
+
+/* 側選單hover */
+.md-nav__link:hover {
+    /* background-color: #e3f4ff; */
+    font-weight: bold;
+}
+
+.md-typeset table:not([class]) th {
+    font-weight: 700;
+    min-width: 0rem;
+    padding: .9375em 1.25em;
+    vertical-align: top;
+}
+
+.question {
+    color: #ff0000;
+}

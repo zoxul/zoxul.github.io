@@ -1,0 +1,57 @@
+image: python:3.9
+
+stages:
+  - deploy
+  - pages
+
+deploy_job:
+  stage: deploy
+  before_script:
+    - export TZ=Asia/Taipei
+    - apt-get update
+    - apt-get install -y fontconfig xfonts-utils
+    - mkdir -p ~/.fonts
+    - wget -P ~/.fonts https://github.com/googlefonts/noto-cjk/raw/main/Sans/OTF/TraditionalChinese/NotoSansCJKtc-Regular.otf
+    - fc-cache -fv
+    - apt-get install -y chromium  # 安裝 Chromium
+    - wget https://storage.googleapis.com/chrome-for-testing-public/123.0.6312.122/linux64/chromedriver-linux64.zip  # 下載 ChromeDriver
+    - ls
+    - unzip $(pwd)/chromedriver-linux64.zip  # 解壓縮 ChromeDriver 到當前目錄
+    - export PATH=$PATH:$PWD  # 將當前目錄添加到 PATH
+
+
+
+
+
+  script:
+    - pip install mkdocs
+    - pip install mkdocs-material
+    - pip install pymdown-extensions
+    - pip install mkdocs-print-site-plugin
+    - pip install mkdocs-glightbox
+    - pip install mkdocs-pdf-with-js-plugin
+    
+    - mkdocs build
+    - mkdir .public
+    - cp -r site/* .public
+    - ls -la .public  # 列出 .public 目錄的內容
+    - mv .public public
+    
+  artifacts:
+    paths:
+      - public
+
+  
+
+pages:
+  stage: pages
+  script:
+    - echo "Using public directory for pages"
+    - ls -la public  # 列出 public 目錄的內容
+  dependencies:
+    - deploy_job
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

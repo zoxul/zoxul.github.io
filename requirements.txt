@@ -1,0 +1,5 @@
+mkdocs-glightbox==0.3.7
+mkdocs-print-site-plugin==2.4.0
+mkdocs-table-reader-plugin==2.2.1
+
+

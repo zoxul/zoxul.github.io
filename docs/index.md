@@ -1,17 +1,46 @@
-# Welcome to MkDocs
+#   Markdown & MkDocs 簡介
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+文件格式採用 Markdown，並以 MkDocs 格式呈現，這樣的配置具有多項好處，使文件的管理和發佈更加高效和便捷。
 
-## Commands
+## MkDocs 的優勢
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+### Markdown 文字格式的優點
 
-## Project layout
+1. **簡單易用**：  
+:   Markdown 語法簡潔明瞭，易於學習和使用。這使得撰寫和維護文檔變得更加輕鬆，即便是非技術人員也能快速上手。
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+2. **版本控制**：  
+:   使用 Git 進行版本控制，可以輕鬆跟蹤文檔的變更歷史，進行回溯和比較。這對於大型文檔專案尤為重要，能夠確保每次變更都有跡可循。
+
+3. **多人協作**：  
+:  支持多人同時編輯，透過 Git 進行協同作業，避免版本衝突。每個人都可以在自己的分支上工作，最終合併到主分支，確保文檔內容一致。
+
+4. **生成式 AI 支援**：
+:  Markdown 文件格式與生成式 AI 工具（如 ChatGPT 和 GitHub Copilot）相容性良好，可以獲得智能輔助。這些工具能夠提供即時建議、自動補全和範例代碼，大大提升編輯效率。
+
+### 輸出 PDF
+:  MkDocs 支援將 Markdown 文件輸出為 PDF 檔案，方便打印和離線閱讀。這使得我們可以在維持線上文件的同時，也能生成高品質的打印版文檔，滿足不同使用場景的需求。
+
+### 靜態網站生成與 CI/CD 集成
+
+:  MkDocs 可以生成靜態網站，搭配 CI/CD 管道，可以實現自動化部署。每當文件更新後，系統能自動生成並發布最新版本的網站，確保文件內容的即時性和準確性。例如，我們可以配置 GitHub Actions 或 Azure DevOps Pipeline 來實現這一功能，使文檔管理更高效。
+
+### 即時更新
+
+:  透過 MkDocs，我們可以將文件變更即時反映到網站上。這意味著，無論是修正錯誤、添加新內容，還是進行其他更新，都可以迅速地部署到生產環境，讓使用者始終訪問到最新的文檔內容。
+
+### 支援 Mermaid 圖表
+
+:  MkDocs 支援 Mermaid 插件，可以方便地繪製各種圖表，包括系統分析常用的 UML 圖表。這對於系統設計和分析文檔尤為重要，因為我們可以直接在 Markdown 文件中嵌入 UML 圖，提升文檔的專業性和可讀性。
+
+### 搜尋功能
+
+:  MkDocs 提供強大的搜尋功能，能夠快速定位到所需的文檔內容。即使文件內容龐大，使用者也可以通過搜尋框迅速找到所需的信息，提升工作效率。
+
+### 客製化與擴展性
+
+:  MkDocs 支援多種主題和插件，可以根據需求進行客製化配置。例如，我們可以使用自定義的 CSS 和 JavaScript 文件來改變網站的外觀和行為，或者引入第三方插件來增加功能，如表格讀取、圖片放大等。
+
+## 結論
+
+:  使用 MkDocs 來建立和管理 SA 文件，不僅提高了文檔的可讀性和專業性，還大大提升了文檔管理的效率。透過 Markdown 的簡潔格式、Git 版控、多人協作、生成式 AI 支援、PDF 輸出、靜態網站生成與自動化部署，以及豐富的圖表和搜尋功能，我們可以輕鬆地創建、更新和發布高品質的系統分析文檔。
