@@ -194,3 +194,30 @@ thead {
 .question {
     color: #ff0000;
 }
+
+.inline-end-wrapper {
+    display: flex;
+    align-items: stretch;
+    /* 使所有子元素的高度一致 */
+}
+
+.inline-end-left,
+.inline-end-right {
+    display: flex;
+    align-items: center;
+    /* 垂直居中對齊 */
+    justify-content: center;
+    /* 水平居中對齊 */
+}
+
+.inline-end-left img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    /* 自適應高度 */
+}
+
+.inline-end-right {
+    flex: 1;
+    margin-left: 20px;
+}

@@ -1,0 +1,33 @@
+@media print {
+    .md-typeset table:not([class]) {
+        display: table;
+    }
+
+    .md-content {
+        min-height: 100vh;
+        box-shadow: none;
+        width: 100%;
+        /* 確保內容區域佔滿頁面寬度 */
+    }
+
+    .md-typeset__table {
+        width: 100% !important;
+        /* 強制表格寬度為100% */
+        table-layout: fixed;
+        /* 固定布局 */
+    }
+
+    .md-typeset table {
+        width: 100% !important;
+        /* 強制表格寬度為100% */
+        table-layout: fixed;
+        /* 固定布局 */
+        border-collapse: collapse;
+        /* 合併邊框 */
+    }
+
+    .md-typeset table th,
+    .md-typeset table td {
+        word-break: break-all;
+    }
+}

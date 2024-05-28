@@ -1,12 +1,20 @@
-site_name: MarkDown 簡介
-nav:
-  - MarkDown:
-    - 基本介紹 : 'pages/markdown1.md'
-    - 基本語法 : 'pages/markdown2.md'
+site_name: MarkDown & MkDocs 簡介
+nav:  
+  - MarkDown: 
+    - 簡介: index.md
+    - 基本介紹 : 'pages/markdown/markdown1.md'
+    - 語法介紹 : 'pages/markdown/markdown2.md'
+  - MkDocs : 'pages/mkdocs/mkdocs.md'  
+  
+extra_javascript:
+  - script/extra.js  
 extra_css:
   - style/extra.css
+  - style/print.css
+
 theme:
   name: 'material'
+  custom_dir: docs
   features:
     - navigation.tabs #子系統導航在上方
     - navigation.tabs.sticky #鎖定上方導航欄

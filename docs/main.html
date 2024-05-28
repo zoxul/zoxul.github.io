@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/github-gist.min.css">
+
+{% endblock styles %}
+
+{% block content %}
+
+{% if page.url_to_print_page %}
+<a href="{{ page.url_to_print_page }}" title="Print Site" class="md-content__button md-icon">
+    {% include ".icons/material/printer.svg" %}
+</a>
+{% endif %}
+{{ super() }}
+{% endblock content %}
+
+{% block scripts %}
+{{ super() }}
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.0/dist/mermaid.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/showdown@1.9.0/dist/showdown.min.js"></script>
+{% endblock scripts %}

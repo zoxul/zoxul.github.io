@@ -1,0 +1,8 @@
+﻿schema,Table Name,R/W,Table名稱
+SHADM,ORG_T,R,申請單位資料紀錄表
+SHADM,ORG_TYPE_T,R,申請單位類別資料表
+SHADM,ISSUE_T,R/W,申請單位與證券代號關聯表
+SHADM,STOCK_T,R/W,證券資料表
+SHAS,{==WARRANT_STK_T==},R/W,{==認購售權證基本資料檔==}
+SHAS,WARRANT_STK_T,R/W,認購售權證基本資料檔
+SHAS,APP_CTRL_T,R/W,配發日控管解除資料檔
