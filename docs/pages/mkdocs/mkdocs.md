@@ -27,11 +27,13 @@ cd my-project
 專案創建後，可以通過編輯 `mkdocs.yml` 配置文件來設置網站。
 
 ```yaml
-site_name: 我的文檔
-nav:
-    - Home: index.md
-    - About: about.md
-theme: mkdocs
+site_name: MarkDown & MkDocs 簡介
+nav:  
+    - MarkDown: 
+        - 簡介: index.md
+        - 基本語法 : 'pages/markdown/markdown1.md'
+        - 特殊語法 : 'pages/markdown/markdown2.md'
+    - MkDocs : 'pages/mkdocs/mkdocs.md'
 ```
 
 #### 主題和擴展
@@ -84,4 +86,4 @@ mkdocs serve
 
 ### 3. 結論
 
-Markdown 和 MkDocs 是強大且靈活的工具，適合各種文檔撰寫和網站生成需求。掌握 Markdown 語法並善用 MkDocs 的功能，可以大大提升文檔編寫和管理的效率。在使用過程中，注意保持文檔的簡潔和一致性，並善用自動化工具來減少工作量。希望這篇詳細指南能幫助你更好地利用 Markdown 和 MkDocs 來創建優秀的文檔和網站。
+Markdown 和 MkDocs 是強大且靈活的工具，適合各種文檔撰寫和網站生成需求。掌握 Markdown 語法並善用 MkDocs 的功能，可以大大提升文檔編寫和管理的效率。在使用過程中，注意保持文檔的簡潔和一致性，並善用自動化工具來減少工作量。

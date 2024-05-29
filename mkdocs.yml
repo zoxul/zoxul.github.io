@@ -2,8 +2,8 @@ site_name: MarkDown & MkDocs 簡介
 nav:  
   - MarkDown: 
     - 簡介: index.md
-    - 基本介紹 : 'pages/markdown/markdown1.md'
-    - 語法介紹 : 'pages/markdown/markdown2.md'
+    - 基本語法 : 'pages/markdown/markdown1.md'
+    - 特殊語法 : 'pages/markdown/markdown2.md'
   - MkDocs : 'pages/mkdocs/mkdocs.md'  
   
 extra_javascript:
