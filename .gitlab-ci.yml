@@ -19,10 +19,6 @@ deploy_job:
     - unzip $(pwd)/chromedriver-linux64.zip  # 解壓縮 ChromeDriver 到當前目錄
     - export PATH=$PATH:$PWD  # 將當前目錄添加到 PATH
 
-
-
-
-
   script:
     - pip install mkdocs
     - pip install mkdocs-material

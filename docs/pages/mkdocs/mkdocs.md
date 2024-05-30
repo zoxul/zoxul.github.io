@@ -32,7 +32,7 @@ nav:
     - MarkDown: 
         - 簡介: index.md
         - 基本語法 : 'pages/markdown/markdown1.md'
-        - 特殊語法 : 'pages/markdown/markdown2.md'
+        - 其他語法 : 'pages/markdown/markdown2.md'
     - MkDocs : 'pages/mkdocs/mkdocs.md'
 ```
 
@@ -63,13 +63,15 @@ theme:
 完成設置和內容創建後，可以使用以下命令構建和部署網站：
 
 ```sh
-mkdocs build
 mkdocs serve
 ```
 
 這會在本地啟動一個開發服務器，預設情況下在 `http://127.0.0.1:8000/`。
 
-
+如果要開啟多個mkdocs使用
+```
+mkdocs serve -a 127.0.0.1:80xx
+```
 
 ---
 
@@ -86,4 +88,4 @@ mkdocs serve
 
 ### 3. 結論
 
-Markdown 和 MkDocs 是強大且靈活的工具，適合各種文檔撰寫和網站生成需求。掌握 Markdown 語法並善用 MkDocs 的功能，可以大大提升文檔編寫和管理的效率。在使用過程中，注意保持文檔的簡潔和一致性，並善用自動化工具來減少工作量。
+Markdown 和 MkDocs 是強大且靈活的工具，適合各種文檔撰寫和網站生成需求。掌握 Markdown 語法並善用 MkDocs 的功能，可以大大提升文檔編寫和管理的效率。在使用過程中，注意保持文檔的簡潔和一致性，並善用自動化工具來減少工作量。  
